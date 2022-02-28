@@ -4,6 +4,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+print("FEATURE 1")
 
 @app.route("/")
 def hello_world():
@@ -14,6 +15,10 @@ def hello_world():
 @app.route('/feature_1')
 def feature_1():
     return '<h1>Feature 1 deployed!</h1>'
+
+@app.route('/feature_2')
+def feature_2():
+    return '<h1>Feature 2 deployed!</h1>'
 
 
 if __name__ == "__main__":
